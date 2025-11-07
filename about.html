@@ -3,9 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Industrial Statistics Lab @ KAIST</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>About | Industrial Statistics (iStat) Lab @ KAIST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --kaist-blue: #004C97;
+      --kaist-orange: #F26A21;
+      --text-color: #222;
+      --bg-light: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-color);
+      line-height: 1.7;
+      background-color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--kaist-blue);
+      padding: 16px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a {
+      color: #e8e8e8;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--kaist-orange);
+    }
+
+    .nav-links .active {
+      color: var(--kaist-orange);
+      font-weight: 600;
+    }
+
+    /* Section */
+    .section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: var(--kaist-blue);
+      margin-bottom: 20px;
+      border-bottom: 3px solid var(--kaist-orange);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .section p {
+      font-size: 17px;
+      color: #333;
+      text-align: justify;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 100px;
+      background-color: var(--kaist-blue);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        display: inline-block;
+        margin: 6px 10px;
+      }
+
+      .section h2 {
+        font-size: 26px;
+      }
+
+      .section p {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar">
     <div class="nav-container">
@@ -24,15 +142,18 @@
   <section class="section">
     <h2>About iStat Lab</h2>
     <p>
-      The Industrial Statistics Lab at KAIST (iStat Lab) aims to advance statistical and machine learning
-      methodologies for analyzing complex, uncertain, and high-dimensional data. 
-      Our research bridges traditional statistics and modern AI to enable reliable decision-making
-      in industrial systems, healthcare, and emerging applications of trustworthy AI.
+      The Industrial Statistics Lab (iStat Lab) at KAIST develops advanced statistical 
+      and machine learning methodologies for complex and uncertain data. 
+      We bridge traditional statistical modeling and modern AI to enable 
+      <b>reliable, interpretable, and data-driven decision-making</b> across industrial systems, 
+      healthcare, and trustworthy AI applications. <br><br>
+      Our long-term vision is to build a foundation for the next generation 
+      of intelligent systems that are not only accurate but also <b>explainable, robust, and reliable</b>.
     </p>
   </section>
 
   <footer>
-    © 2025 Industrial Statistics Lab @ KAIST. All rights reserved.
+    © 2025 Industrial Statistics (iStat) Lab @ KAIST. All rights reserved.
   </footer>
 </body>
 </html>
